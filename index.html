@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Coming Soon</title>
+<style>
+  /* خلفية متدرجة مع حركة بسيطة */
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6b5b95, #feb236, #d64161);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  @keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+  /* صندوق النص */
+  .coming-soon {
+    text-align: center;
+    padding: 40px 60px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    animation: fadeScale 1.2s ease forwards;
+  }
+
+  @keyframes fadeScale {
+    0% {opacity: 0; transform: scale(0.7);}
+    100% {opacity: 1; transform: scale(1);}
+  }
+
+  /* نص Coming Soon */
+  .coming-soon h1 {
+    font-size: 4rem;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5, #42e695);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    0% {text-shadow: 0 0 10px #ff6ec4, 0 0 20px #7873f5;}
+    100% {text-shadow: 0 0 20px #42e695, 0 0 40px #ff6ec4;}
+  }
+
+  /* نص فرعي */
+  .coming-soon p {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 15px;
+    opacity: 0.85;
+  }
+</style>
+</head>
+<body>
+  <div class="coming-soon">
+    <h1>Coming Soon</h1>
+    <p>نحن نعمل على شيء مذهل قادم قريبًا! 🚀</p>
+  </div>
+</body>
+</html>
 
